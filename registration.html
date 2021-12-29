@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link href="login.css" rel="stylesheet" type="text/css" />
+
+	  <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Roboto:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			
+		}
+
+		.background{
+			width:100%;
+			height:800px;
+			background-color:lightblue;
+
+			display: flex;
+			justify-content: center;
+
+
+			position: relative;
+
+		}
+
+		.container{
+			width:30%;
+			height:700px;
+			background-color:#fff;
+			border-radius: 8px;
+			box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+
+			position: absolute;
+			top:40px;
+
+		}
+
+		.container .header{
+			/*font-family: 'Inconsolata', monospace;*/
+			/*font-family: 'Roboto', sans-serif;*/
+			font-family: 'Rubik', sans-serif;
+			font-size: 25px;
+			text-align: center;
+
+			margin-top:15px;
+			margin-bottom:0;
+		}
+
+		
+		.form {
+
+			
+	      padding: 30px 30px;
+	      /*border:2px solid red;*/
+
+	      display: flex;
+	      justify-content: center;
+	      flex-direction: column;
+
+
+           }
+
+           .group1{
+
+           	
+
+
+           	display: flex;
+
+           	margin-left:15px;
+           }
+
+           input{
+           	outline:none;
+           	border:1px solid  #b8b4a9;
+           	font-size:17px;
+
+           }
+           ::placeholder{
+           	 /*font-family: 'Calibri', sans-serif;*/
+           	 font-family: 'Rubik', sans-serif;
+           	 /*font-weight:400px;*/
+           	 font-size:19px;
+
+           }
+
+           input:focus{
+           	border:1px solid #479ecc;
+           }
+           #firstname{
+         
+           	width:45%;
+           	padding:12px 20px;
+
+           	border-radius:7px;
+
+           	float:left;
+
+
+           }
+
+           #lastname{
+           		width:45%;
+           	display: inline-block;
+
+           border-radius:7px;
+
+           	padding:12px 20px;
+           	float:left;
+
+           	margin-left:15px;
+           }
+
+           #email{
+           	width:90%;
+           	 border-radius:7px;
+
+           	padding:12px 20px;
+
+           	margin-left:15px;
+           }
+
+           #password{
+           		width:90%;
+           	 border-radius:7px;
+
+           	padding:12px 20px;
+
+
+           	margin-left:15px;
+
+           }
+
+           #cfpassword{
+           		width:90%;
+
+           		padding:12px 20px;
+			    border-radius:7px;
+
+
+			    margin-left:15px;
+           
+
+           }
+
+           .form-group label{
+           	/*font-family: 'Assistant', sans-serif;*/
+	          display: block;
+	          color:var(--gyc);
+	           margin-bottom: 5px;
+            }
+
+            .form-group{
+            	padding:11px 10px;
+            }
+
+            
+
+		
+		.btn{
+			/*font-family: 'Assistant', sans-serif;*/
+			font-family: 'Rubik', sans-serif;
+			display: block;
+			font-size:18px;
+			width:78%;
+			color:#fff;
+			text-decoration: none;
+			text-align: center;
+			/*background-color:blue;*/
+			background-color: #1c539c;
+			padding:12px 20px;
+			border-radius:7px;
+			border:none;
+
+		   position: absolute;
+		   top:49%;
+		   left:10%;
+		  
+
+		    transition: all 0.3s;
+
+			
+		}
+
+		.btn:hover{
+			color:#fff;
+			background-color:#3167ad;
+		}
+		
+		
+
+		
+
+		.hr{
+			position: absolute;
+			top:5px;
+			color:red;
+		}
+
+		.or-text{
+			font-size: 12px;
+
+			font-weight: 100;
+			position: absolute;
+
+			top:55%;
+			left:50%;
+
+			float: left;
+
+			
+		}
+
+		.line{
+			width:120px;
+			height:5px;
+			border-bottom:0.1px solid #ccdadb;
+			float:left;
+
+			position: absolute;
+			top:55.5%;
+			/*left:14%;*/
+		}
+
+		.line2{
+			border-bottom:0.1px solid #ccdadb;
+
+			position: absolute;
+			right:14%;
+		}
+
+		.line1{
+			left:16%;
+		}
+		.line3{
+			width:80%;
+			height:5px;
+			border-bottom:0.1px solid #ccdadb;
+			float:left;
+
+			position: absolute;
+			bottom:10%;
+			/*left:14%;*/
+		}
+
+		 
+		.group {
+			/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+			/*font-family: 'Assistant', sans-serif;*/
+			font-family:Rubik;
+			width:100%;
+			color:#222;
+			position: absolute;
+			bottom:15%;
+			left:8%;
+
+
+					}
+
+		.group span{
+			display: block;
+			width:76%;
+			border:0.5px solid grey;
+			color:#222;
+			/*padding:5px;*/
+			margin: 15px;
+
+			/*background-color:blue;*/
+			padding:10px 20px;
+			border-radius:7px;
+			text-align: center;
+		
+		}
+		.group span a{
+			text-decoration: none;
+			color:#222;
+
+			transition: all 0.3s;
+
+
+		}
+		.group span a:hover{
+			color:blue;
+		}
+
+		.group span i{
+			/*text-align: left;*/
+			font-size: 20px;
+			position: absolute;
+			left:14%;
+			/*color:blue;*/
+		}
+
+		.fa-facebook{
+			color:blue;
+		}
+
+		.fa-google {
+             background: 
+         linear-gradient(to bottom left,transparent 49%,#fbbc05 50%) 0 25%/48% 40%,
+        linear-gradient(to top    left,transparent 49%,#fbbc05 50%) 0 75%/48% 40%,
+  
+         linear-gradient(-40deg ,transparent 53%,#ea4335 54%),
+         linear-gradient( 45deg ,transparent 46%,#4285f4 48%),
+           #34a853;
+          background-repeat:no-repeat;
+           -webkit-background-clip: text;
+             background-clip: text;
+            color: transparent;
+          -webkit-text-fill-color: transparent;
+}
+		.final{
+			font-family: 'Arial';
+			font-size: 14px;
+			position: absolute;
+			bottom:12%;
+			left:15%;
+		}
+		.final-sen{
+			font-size: 13px;
+			position: absolute;
+			bottom:4%;
+			left:15%;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	
+	<div class="background">
+
+
+	<div class="container">
+
+		<p class="header">Registration</p>
+
+		<form  class="form"     action="" method="">
+
+
+
+		<div class="form-group group1">
+			<!-- <label for="text"></label> -->
+			<input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" 
+			autocomplete="off" >
+
+				<input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name" 
+			autocomplete="off" >
+			
+		</div>
+
+
+
+
+
+
+
+		<div class="form-group">
+			<!-- <label for="email">Email</label> -->
+			<input type="email" name="email" id="email" class="form-control" placeholder="name@gmail.com" 
+			autocomplete="off">
+			
+		</div>
+
+		
+		<div class="form-group group-eye">
+			<!-- <label for="password">Password</label> -->
+			<input type="password" name="password" id="password" class="form-control" placeholder="Password" 
+			autocomplete="off" >
+			
+
+			
+			
+		</div>
+
+
+		<div class="form-group group-eye">
+			<!-- <label for="password">Password</label> -->
+			<input type="password" name="password" id="cfpassword" class="form-control" placeholder="Confirm Password" 
+			autocomplete="off" >
+			
+
+			<a href="#" class="btn">Sign up</a>
+			
+		</div>
+	
+
+		
+		<!-- <a href="#" class="btn">Sign up</a> -->
+
+	
+			<p class="line line1"></p>
+		   <h3><p class="or-text">or</p></h3>
+		   <p class="line line2"></p>
+		<div class="group">
+			<span><i class="fab fa-google"></i><a href="#">Continue with Google</a></span>
+			<span><i class="fab fa-facebook"></i><a href="#">Continue with Facebook</a></span>
+			<span><i class="fab fa-apple"></i><a href="#">Continue with Apple</a></span>
+		</div>
+
+		<p class="final">Already have an account?<a href="#">Login</a></p>
+
+		<p class="line3"></p>
+		
+
+		<p class="final-sen">This site is protected by reCAPTCHA Enterprise<br/> and the <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Service apply</a>.</p>
+
+	</form>
+	</div>
+
+</div>
+
+
+
+
+			
+</body>
+</html>
